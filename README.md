@@ -16,6 +16,8 @@ Chaque article suit le meme format:
 
 Le gabarit officiel est dans [templates/article-template.md](templates/article-template.md).
 
+Les regles de contribution, de reservation des themes et de relecture sont decrites dans [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Structure du depot
 
 ```text
@@ -31,13 +33,17 @@ dist/*.pdf             PDF genere localement ou par CI
 
 ## Creer une contribution
 
-1. Copier `templates/article-template.md` dans `articles/`.
-2. Nommer le fichier avec un numero et un slug, par exemple `articles/001-course-attaque-talon.md`.
-3. Completer le bloc de metadonnees YAML en haut du fichier.
-4. Ajouter une figure libre de droits dans `articles/figures/` et documenter sa licence.
-5. Ouvrir une Pull Request.
+1. Choisir un theme dans [IDEES.md](IDEES.md) ou proposer une nouvelle idee.
+2. Ouvrir rapidement une Pull Request, meme en brouillon, pour reserver le theme.
+3. Copier `templates/article-template.md` dans `articles/`.
+4. Nommer le fichier avec un numero et un slug, par exemple `articles/001-course-attaque-talon.md`.
+5. Completer le bloc de metadonnees YAML en haut du fichier.
+6. Ajouter une figure libre de droits dans `articles/figures/` et documenter sa licence.
+7. Finaliser la contribution dans les 3 mois suivant l'ouverture de la Pull Request.
 
 Les champs `authors` de chaque article alimentent automatiquement `AUTHORS.md` et la page "Collectif des auteurs" du livre compile.
+
+Chaque Pull Request affiche une checklist pour guider l'auteur: qualite scientifique, format editorial, figure et licence, verification technique, et usage responsable de l'IA.
 
 ## Compiler
 
