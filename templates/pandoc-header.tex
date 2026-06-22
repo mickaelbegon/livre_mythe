@@ -1,0 +1,28 @@
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+
+\definecolor{BiomechInk}{HTML}{27343B}
+\definecolor{BiomechBlue}{HTML}{1F5F74}
+\definecolor{BiomechCoral}{HTML}{E07A5F}
+
+\titleformat{\section}
+  {\sffamily\Large\bfseries\color{BiomechBlue}}
+  {\thesection}{0.8em}{}
+
+\titleformat{\subsection}
+  {\sffamily\large\bfseries\color{BiomechInk}}
+  {\thesubsection}{0.8em}{}
+
+\titleformat{\subsubsection}
+  {\sffamily\normalsize\bfseries\color{BiomechInk}}
+  {\thesubsubsection}{0.8em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\small Mythes et realites en biomecanique}
+\fancyhead[R]{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{BiomechCoral}\leaders\hrule height \headrulewidth\hfill}}
+

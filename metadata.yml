@@ -1,0 +1,24 @@
+title: "Mythes et realites en biomecanique"
+subtitle: "Un guide court, critique et illustre pour les etudiants"
+language: fr
+license: "CC BY 4.0"
+publisher: "Collectif Mythes et realites en biomecanique"
+date: "2026"
+keywords:
+  - biomecanique
+  - STAPS
+  - kinesiology
+  - genie
+  - pedagogie
+chapters:
+  - slug: bases
+    title: "Bases et methodes"
+  - slug: mouvement
+    title: "Mouvement, technique et performance"
+  - slug: charge
+    title: "Charges, contraintes et adaptation"
+  - slug: mesure
+    title: "Mesure, modelisation et interpretation"
+  - slug: sante
+    title: "Sante, prevention et rehabilitation"
+

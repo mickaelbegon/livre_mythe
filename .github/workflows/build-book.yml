@@ -1,0 +1,33 @@
+name: Build book
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-recommended texlive-latex-extra
+
+      - name: Build Markdown and PDF
+        run: make all
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: mythes-realites-biomecanique-pdf
+          path: dist/mythes-realites-biomecanique.pdf
