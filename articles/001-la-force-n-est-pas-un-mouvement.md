@@ -21,8 +21,10 @@ authors:
 figure:
   path: "articles/figures/001-force-mouvement.svg"
   caption: "La cinematique decrit le mouvement; la dynamique relie ce mouvement aux forces et aux moments."
-  credit: "Figure originale du projet"
+  credit: "Figure generee avec assistance IA pour l'article exemple"
   license: "CC BY 4.0"
+ai_use:
+  declaration: "Texte et figure generes avec assistance IA pour servir d'exemple de contribution; le contenu doit etre relu et valide scientifiquement avant usage comme article final."
 references:
   - "Winter DA. (2009). Biomechanics and Motor Control of Human Movement. Wiley."
   - "Nigg BM, Herzog W. (2007). Biomechanics of the Musculo-skeletal System. Wiley."
@@ -63,7 +65,11 @@ Pour analyser un geste, il faut separer ce qui est observe directement de ce qui
 
 ![La cinematique decrit le mouvement; la dynamique relie ce mouvement aux forces et aux moments.](articles/figures/001-force-mouvement.svg)
 
-Source et licence: Figure originale du projet, CC BY 4.0.
+Source et licence: figure generee avec assistance IA pour l'article exemple, CC BY 4.0.
+
+## Usage de l'IA
+
+Cet article exemple, incluant la figure, a ete genere avec assistance IA pour illustrer le format attendu. Il doit etre considere comme un support de demonstration: les affirmations scientifiques, les references et la formulation finale doivent etre relues et validees par un auteur humain avant toute integration comme article final.
 
 ## References
 
