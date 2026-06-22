@@ -2,7 +2,7 @@
 id: "001"
 title: "La force n'est pas un mouvement"
 status: "realite"
-chapter: "bases"
+chapter: "cinetique-dynamique"
 summary: "Une force peut modifier un mouvement, mais elle n'est pas le mouvement lui-meme."
 take_home: "Observer un mouvement ne suffit pas a connaitre les forces qui l'ont produit."
 confidence: "eleve"
@@ -70,4 +70,3 @@ Source et licence: Figure originale du projet, CC BY 4.0.
 1. Winter DA. (2009). *Biomechanics and Motor Control of Human Movement*. Wiley.
 2. Nigg BM, Herzog W. (2007). *Biomechanics of the Musculo-skeletal System*. Wiley.
 3. Robertson DGE, Caldwell GE, Hamill J, Kamen G, Whittlesey SN. (2013). *Research Methods in Biomechanics*. Human Kinetics.
-

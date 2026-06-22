@@ -14,7 +14,7 @@ Chaque article suit le meme format:
 6. **Figure libre de droits**: une figure originale, CC0, CC BY, domaine public, ou issue d'une source compatible.
 7. **References**: 3 a 5 references fiables, avec DOI/URL quand possible.
 
-Le gabarit officiel est dans [templates/article-template.md](/Users/mickaelbegon/Documents/GIT/livre_mythe/templates/article-template.md).
+Le gabarit officiel est dans [templates/article-template.md](templates/article-template.md).
 
 ## Structure du depot
 
@@ -72,17 +72,13 @@ git push -u origin article/mon-sujet
 
 La Pull Request doit decrire le mythe ou la realite traitee, signaler la licence de la figure et mentionner les points qui demandent une relecture scientifique.
 
-## Themes de depart
+## Catalogue d'idees
 
-Les chapitres proposes sont definis dans `metadata.yml`:
+Les idees de mythes, realites et nuances a traiter sont regroupees dans [IDEES.md](IDEES.md). Ce fichier sert de backlog editorial: il permet de choisir un sujet, de l'affecter a un chapitre, puis de le transformer en fiche dans `articles/`.
 
-- Bases et methodes
-- Mouvement, technique et performance
-- Charges, contraintes et adaptation
-- Mesure, modelisation et interpretation
-- Sante, prevention et rehabilitation
+Les chapitres actifs du livre sont definis dans `metadata.yml` et repris par le script de compilation. Chaque article choisit son chapitre via le champ `chapter`.
 
-La liste peut evoluer par Pull Request. Chaque article choisit son chapitre via le champ `chapter`.
+La liste peut evoluer par Pull Request: ajout d'un mythe, fusion de deux idees proches, changement de chapitre, ou transformation d'une idee en article redige.
 
 ## Licence
 

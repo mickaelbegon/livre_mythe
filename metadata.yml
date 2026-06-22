@@ -11,14 +11,35 @@ keywords:
   - genie
   - pedagogie
 chapters:
-  - slug: bases
-    title: "Bases et methodes"
-  - slug: mouvement
-    title: "Mouvement, technique et performance"
-  - slug: charge
-    title: "Charges, contraintes et adaptation"
-  - slug: mesure
-    title: "Mesure, modelisation et interpretation"
-  - slug: sante
-    title: "Sante, prevention et rehabilitation"
-
+  - slug: sauts-ssc
+    title: "Sauts et cycle etirement-raccourcissement"
+  - slug: marche
+    title: "Locomotion: marche"
+  - slug: course
+    title: "Locomotion: course a pied"
+  - slug: chaussures-ortheses
+    title: "Chaussures et ortheses"
+  - slug: mesures-instrumentation
+    title: "Mesures et instrumentation"
+  - slug: cinematique-referentiels
+    title: "Cinematique et referentiels"
+  - slug: cinetique-dynamique
+    title: "Cinetique et dynamique inverse"
+  - slug: emg-neuromusculaire
+    title: "EMG et neuromusculaire"
+  - slug: imu-modeles-ml
+    title: "IMU, modeles et apprentissage automatique"
+  - slug: traitement-signal
+    title: "Traitement du signal"
+  - slug: methodologie-stats
+    title: "Methodologie et statistiques"
+  - slug: gymnastique-acrobaties
+    title: "Gymnastique et acrobaties"
+  - slug: preparation-prevention-performance
+    title: "Preparation, prevention et performance"
+  - slug: developpement-populations
+    title: "Developpement et populations"
+  - slug: douleur-blessures
+    title: "Douleur et blessures"
+  - slug: contexte-test
+    title: "Contexte de test: tapis roulant et terrain"
