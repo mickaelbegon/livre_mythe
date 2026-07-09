@@ -35,6 +35,10 @@ chapters:
     title: "Methodologie et statistiques"
   - slug: gymnastique-acrobaties
     title: "Gymnastique et acrobaties"
+  - slug: lancers-rotations
+    title: "Lancers et rotations"
+  - slug: sports-nautiques
+    title: "Sports nautiques"
   - slug: preparation-prevention-performance
     title: "Preparation, prevention et performance"
   - slug: developpement-populations

@@ -18,7 +18,7 @@ Le projet s'inspire du format "mythes et realites", applique au mouvement humain
 | Idee d'article | Statut initial | Chapitre propose |
 | --- | --- | --- |
 | L'augmentation de performance du squat jump vers le countermovement jump s'explique par l'energie stockee dans le muscle lors de la descente. | nuance | sauts-ssc |
-| Aller chercher une grande amplitude de mouvement lors d'un lancer permet de stocker de l'energie dans les muscles de l'epaule. | nuance | preparation-prevention-performance |
+| Aller chercher une grande amplitude de mouvement lors d'un lancer permet de stocker de l'energie dans les muscles de l'epaule. | nuance | lancers-rotations |
 | La norme est le mouvement symetrique. | mythe | methodologie-stats |
 | On leve beaucoup le pied lors de la marche pour eviter le sol. | mythe | marche |
 | Le transfert de poids est un determinant important de la performance sportive. | nuance | preparation-prevention-performance |
@@ -26,8 +26,8 @@ Le projet s'inspire du format "mythes et realites", applique au mouvement humain
 | Les trampolinistes font des mouvements de bras pour vriller parce qu'ils prennent appui sur l'air. | mythe | gymnastique-acrobaties |
 | En cyclisme, il faut chercher principalement une force tangentielle aux pedales pour etre performant. | nuance | preparation-prevention-performance |
 | Le centre de masse passe sous la barre en saut en hauteur et au saut a la perche. | realite | sauts-ssc |
-| Le nageur cree des appuis fixes dans l'eau avec ses mains; ce sont les mains qui permettent de se propulser. | nuance | preparation-prevention-performance |
-| Les pales creuses permettent de deplacer plus d'eau que les pales plates. | nuance | mesures-instrumentation |
+| Le nageur cree des appuis fixes dans l'eau avec ses mains; ce sont les mains qui permettent de se propulser. | nuance | sports-nautiques |
+| Les pales creuses permettent de deplacer plus d'eau que les pales plates. | nuance | sports-nautiques |
 | La validation d'un modele ou d'une methode est generalisable. | mythe | methodologie-stats |
 
 ## Banque large a epurer
@@ -74,6 +74,7 @@ Le projet s'inspire du format "mythes et realites", applique au mouvement humain
 | Les marqueurs refletent directement les vrais angles articulaires. | mythe |
 | La capture markerless 2D suffit pour estimer des moments articulaires 3D. | mythe |
 | Une plate-forme de force mesure directement les moments articulaires. | mythe |
+| Lors d'un exercice sur ergometre isocinetique, les muscles agonistes travaillent a vitesse constante. | mythe |
 
 ### Cinematique et referentiels
 
@@ -126,10 +127,23 @@ Le projet s'inspire du format "mythes et realites", applique au mouvement humain
 | --- | --- |
 | Le gainage verrouille la colonne et supprime le risque lombaire. | mythe |
 | Soulever le dos rond est dangereux dans tous les cas. | mythe |
+| Lors d'un squat, les genoux ne doivent jamais depasser les orteils. | mythe |
 | Les etirements statiques avant l'effort previennent les blessures. | mythe |
 | Les exercices en chaine fermee chargent toujours moins les genoux que la chaine ouverte. | nuance |
 | En cyclisme, on ne pousse qu'en appui; la traction est inutile. | nuance |
 | En natation, plus de battements signifie plus de vitesse pour tout le monde. | mythe |
+
+### Lancers et rotations
+
+| Idee d'article | Statut initial |
+| --- | --- |
+| En lancer de disque ou de marteau, il faut lacher l'engin avec le bras dans la direction ou doit aller le projectile. | mythe |
+
+### Sports nautiques
+
+| Idee d'article | Statut initial |
+| --- | --- |
+| Les bateaux d'aviron et de kayak de vitesse sont longs principalement pour aller tout droit. | mythe |
 
 ### Developpement et populations
 
@@ -172,8 +186,9 @@ Les slugs ci-dessous sont ceux a utiliser dans le champ `chapter` des articles:
 - `traitement-signal`
 - `methodologie-stats`
 - `gymnastique-acrobaties`
+- `lancers-rotations`
+- `sports-nautiques`
 - `preparation-prevention-performance`
 - `developpement-populations`
 - `douleur-blessures`
 - `contexte-test`
-
