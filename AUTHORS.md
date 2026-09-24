@@ -2,9 +2,9 @@
 
 _Cette page est generee depuis les metadonnees YAML des articles._
 
-## Mickael Begon
+## Mickaël Begon
 
-Affiliation: Universite de Montreal
+Affiliation: Université de Montréal
 
 Roles: coordination, redaction
 

@@ -1,29 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-labelledby="title desc">
-  <title id="title">Cinematique et dynamique en biomecanique</title>
-  <desc id="desc">Schema original comparant l'observation du mouvement et l'estimation des forces.</desc>
+  <title id="title">Cinématique et dynamique en biomécanique</title>
+  <desc id="desc">Schéma original comparant l'observation du mouvement et l'estimation des forces et des moments.</desc>
   <rect width="1100" height="560" fill="#f7f7f2"/>
-  <rect x="70" y="70" width="420" height="390" rx="8" fill="#ffffff" stroke="#27343b" stroke-width="3"/>
-  <rect x="610" y="70" width="420" height="390" rx="8" fill="#ffffff" stroke="#27343b" stroke-width="3"/>
-  <text x="280" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#27343b">Cinematique</text>
-  <text x="820" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#27343b">Dynamique</text>
-  <path d="M150 350 C210 220, 310 220, 410 350" fill="none" stroke="#1f77b4" stroke-width="8"/>
-  <circle cx="150" cy="350" r="12" fill="#1f77b4"/>
-  <circle cx="280" cy="250" r="12" fill="#1f77b4"/>
-  <circle cx="410" cy="350" r="12" fill="#1f77b4"/>
-  <text x="280" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#27343b">positions, vitesses, accelerations</text>
-  <line x1="545" y1="265" x2="565" y2="265" stroke="#27343b" stroke-width="4"/>
-  <polygon points="565,265 545,253 545,277" fill="#27343b"/>
-  <circle cx="820" cy="250" r="42" fill="#e07a5f" opacity="0.95"/>
-  <line x1="820" y1="292" x2="820" y2="390" stroke="#27343b" stroke-width="8"/>
-  <line x1="760" y1="390" x2="880" y2="390" stroke="#27343b" stroke-width="8"/>
-  <line x1="820" y1="390" x2="735" y2="430" stroke="#27343b" stroke-width="8"/>
-  <line x1="820" y1="390" x2="905" y2="430" stroke="#27343b" stroke-width="8"/>
-  <line x1="820" y1="250" x2="820" y2="170" stroke="#2a9d8f" stroke-width="10"/>
-  <polygon points="820,150 802,175 838,175" fill="#2a9d8f"/>
-  <line x1="735" y1="430" x2="685" y2="470" stroke="#8d5a97" stroke-width="10"/>
-  <polygon points="670,482 680,452 702,479" fill="#8d5a97"/>
-  <text x="910" y="185" font-family="Arial, sans-serif" font-size="24" fill="#27343b">forces</text>
-  <text x="650" y="505" font-family="Arial, sans-serif" font-size="24" fill="#27343b">moments</text>
-  <text x="820" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#27343b">interactions et causes mecaniques</text>
+  <rect x="70" y="60" width="420" height="440" rx="8" fill="#ffffff" stroke="#27343b" stroke-width="3"/>
+  <rect x="610" y="60" width="420" height="440" rx="8" fill="#ffffff" stroke="#27343b" stroke-width="3"/>
+  <text x="280" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#27343b">Cinématique</text>
+  <text x="820" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#27343b">Dynamique</text>
+  <!-- Cinématique : trajectoire observée -->
+  <path d="M150 360 C210 230, 350 230, 410 360" fill="none" stroke="#1f77b4" stroke-width="8"/>
+  <circle cx="150" cy="360" r="12" fill="#1f77b4"/>
+  <circle cx="280" cy="263" r="12" fill="#1f77b4"/>
+  <circle cx="410" cy="360" r="12" fill="#1f77b4"/>
+  <text x="280" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#27343b">positions, vitesses, accélérations</text>
+  <!-- Flèche entre les panneaux -->
+  <line x1="530" y1="280" x2="560" y2="280" stroke="#27343b" stroke-width="4"/>
+  <polygon points="572,280 552,268 552,292" fill="#27343b"/>
+  <!-- Dynamique : personnage, sol, forces et moment -->
+  <circle cx="800" cy="185" r="30" fill="#e07a5f" opacity="0.95"/>
+  <line x1="800" y1="215" x2="800" y2="305" stroke="#27343b" stroke-width="8" stroke-linecap="round"/>
+  <line x1="800" y1="240" x2="760" y2="280" stroke="#27343b" stroke-width="7" stroke-linecap="round"/>
+  <line x1="800" y1="240" x2="840" y2="280" stroke="#27343b" stroke-width="7" stroke-linecap="round"/>
+  <line x1="800" y1="305" x2="765" y2="380" stroke="#27343b" stroke-width="8" stroke-linecap="round"/>
+  <line x1="800" y1="305" x2="835" y2="380" stroke="#27343b" stroke-width="8" stroke-linecap="round"/>
+  <line x1="690" y1="384" x2="950" y2="384" stroke="#27343b" stroke-width="3"/>
+  <line x1="765" y1="435" x2="765" y2="405" stroke="#2a9d8f" stroke-width="8"/>
+  <polygon points="765,390 753,410 777,410" fill="#2a9d8f"/>
+  <line x1="835" y1="435" x2="835" y2="405" stroke="#2a9d8f" stroke-width="8"/>
+  <polygon points="835,390 823,410 847,410" fill="#2a9d8f"/>
+  <text x="860" y="428" font-family="Arial, sans-serif" font-size="22" fill="#27343b">forces</text>
+  <path d="M770 330 A 40 40 0 1 1 842 318" fill="none" stroke="#8d5a97" stroke-width="7"/>
+  <polygon points="848,334 830,318 852,306" fill="#8d5a97"/>
+  <text x="862" y="310" font-family="Arial, sans-serif" font-size="22" fill="#27343b">moments</text>
+  <text x="820" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#27343b">interactions et causes mécaniques</text>
 </svg>
-
