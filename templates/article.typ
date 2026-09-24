@@ -45,9 +45,10 @@
   // Bloc de titre
   block(width: 100%, below: 1.2em, {
     set text(font: sans)
+    set par(justify: false)
     text(size: 22pt, weight: "bold", fill: blue, meta.title.replace("'", "’"))
     v(0.3em)
-    for a in meta.authors {
+    for a in meta.authors.filter(a => a.name != "") {
       text(style: "italic", a.name)
       if a.at("affiliation", default: "") != "" [, #a.affiliation]
       linebreak()
