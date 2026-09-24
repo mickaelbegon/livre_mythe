@@ -4,12 +4,14 @@ on:
   pull_request:
     paths:
       - "articles/**"
+      - "templates/*.typ"
       - ".github/workflows/build-typst.yml"
   push:
     branches:
       - main
     paths:
       - "articles/**"
+      - "templates/*.typ"
       - ".github/workflows/build-typst.yml"
   workflow_dispatch:
 
@@ -40,10 +42,14 @@ jobs:
             exit 0
           fi
           for f in "${files[@]}"; do
+            [[ "$(basename "$f")" == _* ]] && continue
             out="dist/articles/$(basename "${f%.typ}").pdf"
             echo "Compilation de $f -> $out"
-            typst compile --root articles "$f" "$out"
+            typst compile --root . "$f" "$out"
           done
+
+      - name: Check Typst template
+        run: typst compile --root . templates/article-template.typ /tmp/article-template.pdf
 
       - name: Upload PDFs
         uses: actions/upload-artifact@v4

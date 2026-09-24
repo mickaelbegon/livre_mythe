@@ -16,6 +16,12 @@ Chaque article suit le meme format:
 
 Le gabarit officiel est dans [templates/article-template.md](templates/article-template.md).
 
+Une version Typst est aussi disponible: [templates/article-template.typ](templates/article-template.typ). Elle importe le style commun [templates/article.typ](templates/article.typ), qui reprend la charte du livre. Les fichiers `articles/*.typ` sont compiles en PDF par la CI et publies dans la pre-release [articles-pdf](https://github.com/mickaelbegon/livre_mythe/releases/tag/articles-pdf). Pour compiler localement depuis la racine du depot:
+
+```bash
+typst compile --root . articles/001-la-force-n-est-pas-un-mouvement.typ
+```
+
 Les regles de contribution, de reservation des themes et de relecture sont decrites dans [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Structure du depot

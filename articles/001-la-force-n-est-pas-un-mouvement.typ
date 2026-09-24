@@ -1,6 +1,8 @@
 // Conversion Typst de 001-la-force-n-est-pas-un-mouvement.md
 // Les métadonnées YAML de la version Markdown sont reprises dans `meta`.
 
+#import "../templates/article.typ": article
+
 #let meta = (
   id: "001",
   title: "La force n'est pas un mouvement",
@@ -30,22 +32,9 @@
   ),
 )
 
-#set document(
-  title: meta.title,
-  author: meta.authors.map(a => a.name),
-  keywords: meta.keywords,
-)
-#set text(lang: "fr")
-#set page(margin: 2.4cm)
+#show: article.with(meta)
 
-// Bloc de titre (le titre H1 du Markdown sert de titre ; auteurs en dessous)
-= La force n'est pas un mouvement
-
-#for a in meta.authors [
-  _#a.name#if a.affiliation != "" [, #a.affiliation]_ \
-]
-
-== En bref
+= En bref
 
 *Statut~:* réalité.
 
@@ -53,13 +42,13 @@
 
 *Niveau de confiance~:* élevé.
 
-== Pourquoi on pourrait y croire
+= Pourquoi on pourrait y croire
 
 L'idée inverse est tenace~: on pense souvent qu'on peut «~lire~» la force dans un mouvement, et qu'un corps qui bouge est forcément poussé par une force. Dans le langage courant, on dit volontiers qu'une personne «~met de la force~» quand on voit un geste rapide, ample ou spectaculaire. Cette association est intuitive~: un sprint, un saut ou un lancer donnent l'impression que le mouvement visible est une mesure directe de l'effort produit.
 
 L'expérience quotidienne renforce cette intuition~: un chariot qu'on cesse de pousser finit par s'arrêter, ce qui suggère qu'il faut une force pour entretenir un mouvement. Cette conception, proche de la physique d'Aristote, est l'une des plus répandues, y compris chez les étudiants qui ont suivi des cours de physique (Halloun et Hestenes, 1985). Enfin, en cours de physique, les flèches de force sont souvent dessinées à côté de trajectoires, ce qui peut faire croire que la force est simplement une autre façon de nommer le mouvement.
 
-== Explication grand public
+= Explication grand public
 
 Le mouvement est ce que l'on voit~: un segment du corps (la cuisse, l'avant-bras) qui tourne, le centre de masse (le point qui résume la position moyenne de la masse du corps) qui monte, un pied qui touche le sol. La force, elle, est une interaction entre deux corps~: le pied pousse le sol, un muscle tire sur un tendon, l'air freine un coureur.
 
@@ -67,7 +56,7 @@ Une force ne crée pas le mouvement~: elle change la vitesse, en accélérant, e
 
 Deux personnes peuvent réaliser des mouvements qui se ressemblent tout en utilisant des stratégies mécaniques différentes. Inversement, de grandes forces peuvent être présentes sans mouvement apparent~: lors d'une contraction isométrique, par exemple quand on pousse contre un mur, les muscles produisent des forces importantes, mais le corps reste immobile, car les forces externes qui s'exercent sur lui (mur, sol, poids) s'équilibrent. Leur somme, la force nette, est nulle. C'est pour cela que la vidéo seule fournit une information précieuse, mais incomplète.
 
-== Explication scientifique
+= Explication scientifique
 
 La cinématique mesure des grandeurs comme la position, l'angle articulaire, la vitesse et l'accélération. La dynamique relie ces grandeurs aux causes mécaniques du mouvement. Pour un corps de masse $m$, les équations de Newton-Euler s'écrivent~:
 
@@ -81,7 +70,7 @@ La cinématique n'est pas pour autant muette sur les forces. Si l'on connaît le
 
 En biomécanique humaine, l'estimation des forces dépend donc du modèle~: choix des segments, estimation des masses et des inerties, mesure des forces externes, conventions de repère, filtrage des signaux. Une analyse dynamique inverse peut estimer des moments articulaires nets, mais ces moments n'indiquent pas directement quelle force produit chaque muscle. Comme il y a plus de muscles que de degrés de liberté articulaires, le problème est indéterminé~: c'est la redondance musculaire. Plusieurs combinaisons musculaires, avec plus ou moins de co-contraction entre agonistes et antagonistes, peuvent produire un même moment net tout en imposant des forces de contact articulaire et des tensions ligamentaires très différentes (Erdemir et al., 2007). Deux gestes identiques à la vidéo, et même de moment net identique, peuvent donc solliciter l'articulation de façon très différente.
 
-== Ce qu'il faut retenir en pratique
+= Ce qu'il faut retenir en pratique
 
 Pour analyser un geste, il faut séparer ce qui est observé directement de ce qui est estimé. Confondre les deux conduit à surinterpréter des images spectaculaires ou à tirer des conclusions trop rapides sur la charge mécanique.
 
@@ -89,7 +78,7 @@ Pour analyser un geste, il faut séparer ce qui est observé directement de ce q
 - *Les forces se mesurent ou s'estiment.* Les plateformes de force, les modèles segmentaires et les hypothèses dynamiques permettent d'estimer les forces et les moments, avec des incertitudes qu'il faut connaître et rapporter.
 - *Le moment net n'est pas la charge articulaire.* En prévention ou en réadaptation, la co-contraction et la répartition des forces entre les muscles peuvent compter autant que le moment net.
 
-== Figure
+= Figure
 
 #figure(
   image("figures/001-force-mouvement.svg", width: 100%),
@@ -98,11 +87,11 @@ Pour analyser un geste, il faut séparer ce qui est observé directement de ce q
 
 Source et licence~: figure générée avec l'assistance de l'IA pour l'article exemple, CC BY 4.0.
 
-== Usage de l'IA
+= Usage de l'IA
 
 Cet article exemple, figure comprise, a été généré avec l'assistance de l'IA pour illustrer le format attendu. Il doit être considéré comme un support de démonstration~: les affirmations scientifiques, les références et la formulation finale doivent être relues et validées par un auteur humain avant toute intégration comme article final.
 
-== Références
+= Références
 
 + Winter DA. (2009). _Biomechanics and Motor Control of Human Movement_ (4#super[e] éd.). Wiley.
 + Nigg BM, Herzog W. (2007). _Biomechanics of the Musculo-skeletal System_ (3#super[e] éd.). Wiley.
